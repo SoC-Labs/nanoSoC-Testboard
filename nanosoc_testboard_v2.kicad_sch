@@ -6445,6 +6445,16 @@
 				(justify left top)
 			)
 		)
+		(pin "SA0" input
+			(at 39.37 92.71 180)
+			(uuid "1d2a59d6-b78f-4523-a2a4-b0892239bd1b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "nanosoc_testboard_v2"
 				(path "/1afcfdb5-823f-476c-bbfc-4d491fb0ea31"
