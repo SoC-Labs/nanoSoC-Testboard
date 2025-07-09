@@ -2323,7 +2323,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 52.07) (xy 68.58 52.07)
+			(xy 107.95 52.07) (xy 78.74 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2501,6 +2501,17 @@
 		)
 		(uuid "ec335cea-7ea0-49d5-98e0-a55cba33a80d")
 	)
+	(hierarchical_label "SDA"
+		(shape input)
+		(at 78.74 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "06fd61b6-720e-4e0f-a8f7-5573aace70ce")
+	)
 	(hierarchical_label "VDD_IN"
 		(shape input)
 		(at 21.59 120.65 180)
@@ -2511,6 +2522,17 @@
 			(justify right)
 		)
 		(uuid "48a3524a-cb85-426d-a9aa-22cef8cdff1d")
+	)
+	(hierarchical_label "SCL"
+		(shape input)
+		(at 78.74 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a207fea6-f72e-4d55-bde1-3af6b5255e77")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -3431,7 +3453,7 @@
 				)
 			)
 		)
-		(property "Footprint" "RGZ48_4P8X4P8"
+		(property "Footprint" "CDCM6208:RGZ48_4P8X4P8"
 			(at 107.95 31.75 0)
 			(effects
 				(font
@@ -3920,7 +3942,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "RGZ48_4P8X4P8"
+		(property "Footprint" "CDCM6208:RGZ48_4P8X4P8"
 			(at 129.54 142.24 0)
 			(effects
 				(font

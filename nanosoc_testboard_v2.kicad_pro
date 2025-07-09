@@ -632,6 +632,10 @@
     [
       "9cd12d94-fc60-4047-b7ac-60cd51e9fb30",
       "FPGA_IO"
+    ],
+    [
+      "97eab1c9-2dae-41ee-8e7e-9f5b2f223d19",
+      "power_control"
     ]
   ],
   "text_variables": {}
