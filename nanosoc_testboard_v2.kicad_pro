@@ -107,6 +107,7 @@
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "warning",
+        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -122,8 +123,8 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.175,
-        "min_connection": 0.175,
+        "min_clearance": 0.15,
+        "min_connection": 0.15,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.175,
@@ -135,7 +136,7 @@
         "min_text_height": 0.5,
         "min_text_thickness": 0.06,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.175,
+        "min_track_width": 0.15,
         "min_via_annular_width": 0.15,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
@@ -186,7 +187,10 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.15,
+        0.175,
+        0.2
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -636,6 +640,10 @@
     [
       "97eab1c9-2dae-41ee-8e7e-9f5b2f223d19",
       "power_control"
+    ],
+    [
+      "8ca42561-c2b4-419a-81b2-662506314a92",
+      "USB_system"
     ]
   ],
   "text_variables": {}
