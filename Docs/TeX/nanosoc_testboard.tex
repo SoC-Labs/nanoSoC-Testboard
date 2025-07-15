@@ -1,4 +1,4 @@
-\documentclass{report}
+\documentclass{article}
 \usepackage{hyperref}
 
 \title{nanoSoC Test Board Datasheet}
@@ -8,9 +8,166 @@
 
 \tableofcontents
 \clearpage
-\chapter{Introduction}
+\section{Introduction}
 
 \section{Summary}
 
+\section{FPGA Connections}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ c c c c c}
+    FPGA Pin Name & FPGA Pin Number & FPGA Bank &  Nanosoc Pin Name & Nanosoc Pin Number \\
+    \hline
+    PL16A   & 25    & 3    &  &   \\
+    PL16B   & 26    & 3    &  &   \\
+    PL17A   & 27    & 3    &  &   \\
+    PL17B   & 28    & 3    &  &   \\
+    PL18D   & 31    & 3    & SE     &   \\
+    PL19A   & 32    & 3    & TEST   &   \\
+    PL19B   & 33    & 3    & P0[0]  &   \\
+    PL20A   & 34    & 3    & P0[1]  &   \\
+    PL20B   & 35    & 3    & P0[2]  &   \\
+    PB3A    & 38    & 2    & P0[3]  &   \\
+    PB3B    & 39    & 2    & P0[4]  &   \\
+    PB4A    & 40    & 2    & P0[5]  &   \\
+    PB4B    & 41    & 2    & P0[6]  &   \\
+    PB7A    & 42    & 2    & P0[7]  &   \\
+    PB7B    & 43    & 2    & P0[8]  &   \\
+    PB9A    & 44    & 2    & P0[9]  &   \\
+    PB9B    & 45    & 2    & P0[10] &   \\
+    PB10A   & 47    & 2    & P0[11] &   \\
+    PB10B   & 48    & 2    & P0[12] &   \\
+    PB13A   & 49    & 2    & P0[13] &   \\
+    PB13B   & 50    & 2    & P0[14] &   \\
+    PB15A   & 52    & 2    & P0[15] &   \\
+    PB15B   & 54    & 2    & P1[0]  &   \\
+    PB20A   & 55    & 2    & P1[1]  &   \\
+    PB20B   & 56    & 2    & P1[2]  &   \\
+    PB21A   & 57    & 2    & P1[3]  &   \\
+    PB21B   & 58    & 2    & P1[4]  &   \\
+    PB23A   & 59    & 2    & P1[5]  &   \\
+    PB23B   & 60    & 2    & P1[6]  &   \\
+    PB24A   & 61    & 2    & P1[7]  &   \\
+    PB24B   & 62    & 2    & P1[8]  &   \\
+    PB24D   & 63    & 2    & P1[9]  &   \\
+    PB27A   & 65    & 2    & P1[10] &   \\
+    PB27B   & 67    & 2    & P1[11] &   \\
+    PB29A   & 68    & 2    & P1[12] &   \\
+    PB29B   & 69    & 2    & P1[13] &   \\
+    PB30A   & 70    & 2    & P1[14] &   \\
+    PB30B   & 71    & 2    & P1[15] &   
+    \end{tabular}
+    \caption{FPGA Connections to nanoSoC}
+    \label{table:fpga_nanosoc}
+\end{table}
+
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ c c c c c}
+    FPGA Pin Name & FPGA Pin Number & FPGA Bank & Header Pin Name & Header Pin Number \\
+    \hline
+    PT28D   & 109   & 0    & SA3 &   \\
+    PT28C   & 110   & 0    & SA2 &   \\
+    PT27B   & 111   & 0    & SA1 &   \\
+    PT27A   & 112   & 0    & SA0 &   \\
+    PT25B   & 113   & 0    &    &   \\
+    PT25A   & 114   & 0    &    &   \\
+    PT24B   & 115   & 0    &   &   \\
+    PT24A   & 117   & 0    &   &   \\
+    PT23D   & 119   & 0    &   &   \\
+    PT23C   & 120   & 0    &   &   \\
+    PT21B   & 121   & 0    &   &   \\
+    PT21A   & 122   & 0    &   &   \\
+    PT20D   & 125   & 0    & SDA  &   \\
+    PT20C   & 126   & 0    & SCL  &   \\
+    PT18B   & 127   & 0    &   &   \\
+    PT18A   & 128   & 0    &   &   \\
+    PT15D   & 130   & 0    &  &   \\
+    PT15C   & 131   & 0    &  &   \\
+    PT14B   & 132   & 0    &  &   \\
+    PT14A   & 133   & 0    &  &   \\
+    PT13D   & 136   & 0    &  &   \\
+    PT13C   & 137   & 0    &  &   \\
+    PT11B   & 138   & 0    &   &   \\
+    PT11A   & 139   & 0    &   &   \\
+    PT10B   & 140   & 0    &   &   \\
+    PT10A   & 141   & 0    &   &   \\
+    PT9B    & 142   & 0    &   &   \\
+    PT9A    & 143   & 0    &   &   \\
+      &    & 2    &   &   \\
+      &    & 2    &   &   \\
+      &    & 2    &   &   \\
+      &    & 2    &   &   \\
+      &    & 2    &  &   \\
+      &    & 2    &  &   \\
+      &    & 2    &  &   \\
+      &    & 2    &  &   \\
+      &    & 2    &  &   \\
+      &    & 2    &  &   
+    \end{tabular}
+    \caption{FPGA to Pi Header Connections}
+    \label{table:fpga_pi}
+\end{table}
+
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ c c c c c}
+    FPGA Pin Name & FPGA Pin Number & FPGA Bank & PMOD Pin \\
+    \hline
+    PL3A   & 1  & 5   & 8   \\
+    PL3B   & 2  & 5   & 4   \\
+    PL4A   & 3  & 5   & 7   \\
+    PL4B   & 4  & 5   & 3   \\
+    PL7A   & 9  & 5   & 6   \\
+    PL7B   & 10 & 5   & 2   \\
+    PL8A   & 11 & 5   & 5   \\
+    PL8B   & 12 & 5   & 1   \\
+    \end{tabular}
+    \caption{FPGA to PMODA Connections}
+    \label{table:fpga_pmoda}
+\end{table}
+
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ c c c c c}
+    FPGA Pin Name & FPGA Pin Number & FPGA Bank & PMOD Pin \\
+    \hline
+    PL9A   & 13 & 4   & 8   \\
+    PL9B   & 14 & 4   & 4   \\
+    PL10A  & 15 & 4   & 7   \\
+    PL10B  & 17 & 4   & 3   \\
+    PL13A  & 21 & 4   & 6   \\
+    PL13B  & 22 & 4   & 2   \\
+    PL14A  & 23 & 4   & 5   \\
+    PL14B  & 24 & 4   & 1   \\
+    \end{tabular}
+    \caption{FPGA to PMODB Connections}
+    \label{table:fpga_pmodb}
+\end{table}
+
+
+
+\section{Communications interface}
+
+\subsection{I2C}
+
+\begin{center}
+    \begin{tabular}{ c c c c}
+    Device & Identifier & Adress & Purpose \\
+    \hline
+    CDCM6208 & U1 & 10101(AD1 AD0) & Clock Controller \\
+    INA228 & U2 & 1000000 &  VDDACC Monitor \\
+    INA228 & U3 & 1000001 & VDD CORE Monitor \\
+    INA228 & U4 & 1000100 & VDDIO Monitor \\
+    LP87563-Q1 & & 1100001 & Power Management IC 
+    \end{tabular}
+\end{center}
+
+\section{References}
+Bugblat PIF uses raspberry pi to program the Mach XO2 Chip: \href{https://www.bugblat.com/products/pif/index.html}{PIF link}
 
 \end{document}
