@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "nanosoc_parts") (type "KiCad") (uri "F:/OneDrive - University of Southampton/SoC Labs/nanoSoC-Testboard/libs/nanosoc_parts.pretty") (options "") (descr ""))
+)
